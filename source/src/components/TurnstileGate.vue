@@ -209,7 +209,7 @@ onBeforeUnmount(() => {
 
 .gate-card h2 {
   margin: 8px 0 6px;
-  font-size: 20px;
+  font-size: 21px;
   letter-spacing: -0.02em;
 }
 
@@ -217,7 +217,7 @@ onBeforeUnmount(() => {
   margin: 0 auto 20px;
   max-width: 290px;
   color: var(--muted);
-  font-size: 12.5px;
+  font-size: 13.5px;
   line-height: 1.6;
 }
 
@@ -232,7 +232,7 @@ onBeforeUnmount(() => {
 .gate-error {
   margin: 8px 0 0;
   color: var(--bad);
-  font-size: 12px;
+  font-size: 13px;
 }
 
 .gate-verifying {
@@ -241,7 +241,7 @@ onBeforeUnmount(() => {
   gap: 7px;
   margin-top: 10px;
   color: var(--accent);
-  font-size: 12px;
+  font-size: 13px;
 }
 
 .gate-retry {
@@ -258,7 +258,7 @@ onBeforeUnmount(() => {
   border-top: 1px solid var(--line);
   color: var(--faint);
   font-family: var(--font-mono);
-  font-size: 10px;
+  font-size: 12.5px;
   letter-spacing: 0.04em;
 }
 

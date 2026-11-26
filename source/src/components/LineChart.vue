@@ -336,7 +336,7 @@ function clearHover() {
   align-items: center;
   gap: 6px;
   color: var(--muted);
-  font-size: 11px;
+  font-size: 12px;
   white-space: nowrap;
 }
 
@@ -349,7 +349,7 @@ function clearHover() {
 
 .legend-item b {
   color: var(--text-soft);
-  font-size: 11px;
+  font-size: 12px;
   font-weight: 600;
 }
 
@@ -369,14 +369,14 @@ function clearHover() {
 .chart-grid text {
   fill: var(--faint);
   font-family: var(--font-mono);
-  font-size: 10px;
+  font-size: 12.5px;
   font-variant-numeric: tabular-nums;
 }
 
 .chart-axis text {
   fill: var(--faint);
   font-family: var(--font-mono);
-  font-size: 10px;
+  font-size: 12.5px;
   font-variant-numeric: tabular-nums;
 }
 
@@ -397,7 +397,7 @@ function clearHover() {
   border-radius: 8px;
   background: var(--surface);
   color: var(--faint);
-  font-size: 12px;
+  font-size: 13px;
   transform: translate(-50%, -50%);
   backdrop-filter: blur(8px);
 }
@@ -422,7 +422,7 @@ function clearHover() {
   padding-bottom: 4px;
   border-bottom: 1px solid var(--line);
   color: var(--faint);
-  font-size: 10.5px;
+  font-size: 12px;
   white-space: nowrap;
 }
 
@@ -431,7 +431,7 @@ function clearHover() {
   align-items: center;
   gap: 6px;
   min-height: 18px;
-  font-size: 11px;
+  font-size: 12px;
 }
 
 .tooltip-dot {
@@ -449,7 +449,7 @@ function clearHover() {
 
 .tooltip-row strong {
   color: var(--text);
-  font-size: 11px;
+  font-size: 12px;
   font-weight: 600;
   white-space: nowrap;
 }

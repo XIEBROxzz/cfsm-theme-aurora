@@ -724,7 +724,7 @@ onBeforeUnmount(() => {
   align-items: center;
   gap: 6px;
   color: var(--muted);
-  font-size: 12px;
+  font-size: 13px;
   font-weight: 560;
   transition: color 0.16s ease;
 }
@@ -749,7 +749,7 @@ onBeforeUnmount(() => {
   border-radius: 99px;
   color: var(--muted);
   font-family: var(--font-mono);
-  font-size: 10.5px;
+  font-size: 12px;
   font-weight: 600;
   letter-spacing: 0.06em;
   text-transform: uppercase;
@@ -827,7 +827,7 @@ onBeforeUnmount(() => {
   margin: 3px 0 7px;
   overflow: hidden;
   color: var(--text);
-  font-size: 27px;
+  font-size: 28px;
   font-weight: 680;
   letter-spacing: -0.04em;
   line-height: 1.1;
@@ -851,7 +851,7 @@ onBeforeUnmount(() => {
   border: 1px solid var(--line);
   border-radius: 5px;
   color: var(--muted);
-  font-size: 11px;
+  font-size: 12px;
   font-weight: 560;
 }
 
@@ -879,7 +879,7 @@ onBeforeUnmount(() => {
   align-items: center;
   gap: 5px;
   color: var(--muted);
-  font-size: 11px;
+  font-size: 12px;
 }
 
 .os-chip img {
@@ -890,7 +890,7 @@ onBeforeUnmount(() => {
 
 .meta-text {
   color: var(--faint);
-  font-size: 11px;
+  font-size: 12px;
 }
 
 .tag-row {
@@ -906,7 +906,7 @@ onBeforeUnmount(() => {
   border-radius: 4px;
   color: var(--faint);
   font-family: var(--font-mono);
-  font-size: 10px;
+  font-size: 12.5px;
 }
 
 .hero-side {
@@ -927,14 +927,14 @@ onBeforeUnmount(() => {
 .hero-report span {
   color: var(--faint);
   font-family: var(--font-mono);
-  font-size: 10px;
+  font-size: 12.5px;
   letter-spacing: 0.08em;
   text-transform: uppercase;
 }
 
 .hero-report strong {
   color: var(--muted);
-  font-size: 11px;
+  font-size: 12px;
   font-weight: 500;
   white-space: nowrap;
 }
@@ -979,7 +979,7 @@ onBeforeUnmount(() => {
 .traffic-head span {
   color: var(--faint);
   font-family: var(--font-mono);
-  font-size: 10.5px;
+  font-size: 12px;
   font-weight: 650;
   letter-spacing: 0.09em;
   text-transform: uppercase;
@@ -987,7 +987,7 @@ onBeforeUnmount(() => {
 
 .traffic-head strong {
   color: var(--text);
-  font-size: 15px;
+  font-size: 16px;
   font-weight: 650;
   white-space: nowrap;
 }
@@ -1018,7 +1018,7 @@ onBeforeUnmount(() => {
   align-items: center;
   justify-content: space-between;
   color: var(--faint);
-  font-size: 10.5px;
+  font-size: 12px;
 }
 
 .traffic-foot b {
@@ -1031,7 +1031,7 @@ onBeforeUnmount(() => {
   gap: 12px;
   color: var(--muted);
   font-family: var(--font-mono);
-  font-size: 10.5px;
+  font-size: 12px;
 }
 
 .traffic-split span {
@@ -1072,7 +1072,7 @@ onBeforeUnmount(() => {
 
 .charts-copy h2 {
   margin: 3px 0 0;
-  font-size: 18px;
+  font-size: 19px;
   font-weight: 650;
   letter-spacing: -0.025em;
 }
@@ -1091,7 +1091,7 @@ onBeforeUnmount(() => {
   padding: 0 9px;
   border-radius: 5px;
   color: var(--muted);
-  font-size: 11px;
+  font-size: 12px;
   font-weight: 560;
   white-space: nowrap;
 }
@@ -1123,7 +1123,7 @@ onBeforeUnmount(() => {
   gap: 7px;
   margin: 0;
   color: var(--text-soft);
-  font-size: 12.5px;
+  font-size: 13.5px;
   font-weight: 600;
 }
 
@@ -1133,7 +1133,7 @@ onBeforeUnmount(() => {
 
 .chart-count {
   color: var(--faint);
-  font-size: 10px;
+  font-size: 12.5px;
 }
 
 .chart-loading {
@@ -1142,7 +1142,7 @@ onBeforeUnmount(() => {
   gap: 5px;
   color: var(--faint);
   font-family: var(--font-mono);
-  font-size: 10px;
+  font-size: 12.5px;
 }
 
 .chart-loading i {
@@ -1177,7 +1177,7 @@ onBeforeUnmount(() => {
 .side-head h2 {
   margin: 0;
   color: var(--text-soft);
-  font-size: 12.5px;
+  font-size: 13.5px;
   font-weight: 600;
   letter-spacing: 0.01em;
 }
@@ -1187,7 +1187,7 @@ onBeforeUnmount(() => {
   border: 1px solid var(--line);
   border-radius: 4px;
   color: var(--faint);
-  font-size: 10px;
+  font-size: 12.5px;
   white-space: nowrap;
 }
 
@@ -1215,7 +1215,7 @@ onBeforeUnmount(() => {
 .info-row dt {
   flex: 0 0 auto;
   color: var(--faint);
-  font-size: 11px;
+  font-size: 12px;
 }
 
 .info-row dd {
@@ -1224,7 +1224,7 @@ onBeforeUnmount(() => {
   margin: 0;
   color: var(--text-soft);
   font-family: var(--font-mono);
-  font-size: 11px;
+  font-size: 12px;
   text-align: right;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -1246,14 +1246,14 @@ onBeforeUnmount(() => {
 
 .traffic-large strong {
   color: var(--text);
-  font-size: 23px;
+  font-size: 24px;
   font-weight: 650;
   letter-spacing: -0.04em;
 }
 
 .traffic-large span {
   color: var(--faint);
-  font-size: 11px;
+  font-size: 12px;
 }
 
 .traffic-detail-grid {
@@ -1274,12 +1274,12 @@ onBeforeUnmount(() => {
 
 .traffic-detail-grid span {
   color: var(--faint);
-  font-size: 10px;
+  font-size: 12.5px;
 }
 
 .traffic-detail-grid b {
   color: var(--text-soft);
-  font-size: 11px;
+  font-size: 12px;
   font-weight: 600;
 }
 
@@ -1306,7 +1306,7 @@ onBeforeUnmount(() => {
   gap: 5px;
   color: var(--text);
   font-family: var(--font-mono);
-  font-size: 10px;
+  font-size: 12.5px;
   font-weight: 650;
   letter-spacing: 0.05em;
 }
@@ -1319,7 +1319,7 @@ onBeforeUnmount(() => {
 
 .route-box > strong {
   color: var(--text);
-  font-size: 14px;
+  font-size: 15px;
   font-weight: 600;
   letter-spacing: -0.03em;
 }
@@ -1327,7 +1327,7 @@ onBeforeUnmount(() => {
 .route-box > strong small {
   margin-left: 1px;
   color: var(--faint);
-  font-size: 10.5px;
+  font-size: 12px;
   font-weight: 500;
 }
 
@@ -1342,7 +1342,7 @@ onBeforeUnmount(() => {
 .route-loss {
   color: var(--faint);
   font-family: var(--font-mono);
-  font-size: 11px;
+  font-size: 12px;
 }
 
 .stat-grid {
@@ -1365,12 +1365,12 @@ onBeforeUnmount(() => {
 
 .stat-grid span {
   color: var(--faint);
-  font-size: 10px;
+  font-size: 12.5px;
 }
 
 .stat-grid b {
   color: var(--text-soft);
-  font-size: 12.5px;
+  font-size: 13.5px;
   font-weight: 600;
 }
 
@@ -1383,14 +1383,14 @@ onBeforeUnmount(() => {
 
 .price-row strong {
   color: var(--accent);
-  font-size: 24px;
+  font-size: 25px;
   font-weight: 650;
   letter-spacing: -0.04em;
 }
 
 .price-row span {
   color: var(--faint);
-  font-size: 11px;
+  font-size: 12px;
 }
 
 .inline-banner {
@@ -1403,7 +1403,7 @@ onBeforeUnmount(() => {
   border-radius: 9px;
   background: rgba(var(--warn-rgb), 0.05);
   color: var(--warn);
-  font-size: 12px;
+  font-size: 13px;
 }
 
 .inline-banner.compact {
@@ -1417,7 +1417,7 @@ onBeforeUnmount(() => {
 
 .inline-banner button {
   color: var(--text-soft);
-  font-size: 11px;
+  font-size: 12px;
   text-decoration: underline;
   text-underline-offset: 2px;
 }
@@ -1499,7 +1499,7 @@ onBeforeUnmount(() => {
 
 .detail-error h1 {
   margin: 0 0 6px;
-  font-size: 20px;
+  font-size: 21px;
   letter-spacing: -0.03em;
 }
 
@@ -1507,7 +1507,7 @@ onBeforeUnmount(() => {
   max-width: 380px;
   margin: 0 0 18px;
   color: var(--muted);
-  font-size: 13px;
+  font-size: 14px;
   line-height: 1.6;
 }
 
@@ -1588,7 +1588,7 @@ onBeforeUnmount(() => {
   }
 
   .hero-title h1 {
-    font-size: 22px;
+    font-size: 23px;
   }
 
   .flag-large {

@@ -164,7 +164,7 @@ onBeforeUnmount(() => {
   align-items: center;
   gap: 7px;
   color: var(--muted);
-  font-size: 11.5px;
+  font-size: 12.5px;
   font-weight: 600;
   letter-spacing: 0.04em;
   text-transform: uppercase;
@@ -187,7 +187,7 @@ onBeforeUnmount(() => {
   padding: 0 9px;
   border-radius: 6px;
   color: var(--muted);
-  font-size: 11.5px;
+  font-size: 12.5px;
   font-weight: 550;
   transition: background 0.18s ease, color 0.18s ease;
 }
@@ -246,7 +246,7 @@ onBeforeUnmount(() => {
 .error-panel h2,
 .empty-panel h2 {
   margin: 0 0 6px;
-  font-size: 18px;
+  font-size: 19px;
   font-weight: 600;
   letter-spacing: -0.02em;
 }
@@ -256,7 +256,7 @@ onBeforeUnmount(() => {
   max-width: 360px;
   margin: 0 0 18px;
   color: var(--muted);
-  font-size: 12px;
+  font-size: 13px;
   line-height: 1.6;
 }
 

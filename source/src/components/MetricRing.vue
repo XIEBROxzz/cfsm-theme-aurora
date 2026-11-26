@@ -92,20 +92,20 @@ const offset = computed(() => circumference * (1 - safeValue.value / 100))
   justify-content: center;
   color: var(--text);
   font-family: var(--font-mono);
-  font-size: 12px;
+  font-size: 13px;
   font-weight: 650;
   font-variant-numeric: tabular-nums;
   letter-spacing: -0.04em;
 }
 
 html[data-density="comfortable"] .ring-value {
-  font-size: 13px;
+  font-size: 14px;
 }
 
 .ring-value em {
   margin-left: 1px;
   color: var(--faint);
-  font-size: 11.5px;
+  font-size: 12.5px;
   font-style: normal;
   font-weight: 500;
 }
@@ -113,7 +113,7 @@ html[data-density="comfortable"] .ring-value {
 .ring-label {
   color: var(--faint);
   font-family: var(--font-mono);
-  font-size: 11.5px;
+  font-size: 12.5px;
   font-weight: 650;
   letter-spacing: 0.1em;
 }
@@ -123,7 +123,7 @@ html[data-density="comfortable"] .ring-value {
   max-width: 78px;
   color: var(--muted);
   font-family: var(--font-mono);
-  font-size: 11px;
+  font-size: 12px;
   text-overflow: ellipsis;
   white-space: nowrap;
 }

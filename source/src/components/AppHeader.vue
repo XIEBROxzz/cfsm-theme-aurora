@@ -63,7 +63,7 @@ const adminLabel = computed(() => (authed.value ? t('adminPanel') : t('login')))
   overflow: hidden;
   max-width: min(52vw, 360px);
   color: var(--text);
-  font-size: 16px;
+  font-size: 17px;
   font-weight: 600;
   letter-spacing: -0.01em;
   text-overflow: ellipsis;
@@ -85,7 +85,7 @@ const adminLabel = computed(() => (authed.value ? t('adminPanel') : t('login')))
   padding: 0 10px;
   border-radius: 8px;
   color: var(--text);
-  font-size: 14px;
+  font-size: 15px;
   font-weight: 400;
   white-space: nowrap;
   transition: background 0.15s ease, color 0.15s ease;
@@ -119,12 +119,12 @@ const adminLabel = computed(() => (authed.value ? t('adminPanel') : t('login')))
 @media (max-width: 640px) {
   .brand {
     max-width: 40vw;
-    font-size: 15px;
+    font-size: 16px;
   }
 
   .header-link {
     padding: 0 8px;
-    font-size: 13px;
+    font-size: 14px;
   }
 }
 

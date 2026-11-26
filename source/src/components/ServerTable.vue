@@ -171,7 +171,7 @@ function latencyCount(server) {
 
 .server-table {
   width: 100%;
-  min-width: 980px;
+  min-width: 1080px;
   border-collapse: collapse;
 }
 
@@ -180,7 +180,7 @@ th {
   border-bottom: 1px solid var(--line);
   color: var(--faint);
   font-family: var(--font-mono);
-  font-size: 8.5px;
+  font-size: 12px;
   font-weight: 650;
   letter-spacing: 0.11em;
   text-align: left;
@@ -192,7 +192,7 @@ td {
   padding: 12px 14px;
   border-bottom: 1px solid var(--line);
   color: var(--text-soft);
-  font-size: 11px;
+  font-size: 12px;
   vertical-align: middle;
 }
 
@@ -255,7 +255,7 @@ tr.is-offline {
   overflow: hidden;
   max-width: 170px;
   color: var(--text);
-  font-size: 12px;
+  font-size: 13px;
   font-weight: 600;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -265,7 +265,7 @@ tr.is-offline {
   overflow: hidden;
   max-width: 170px;
   color: var(--faint);
-  font-size: 9px;
+  font-size: 12px;
   text-overflow: ellipsis;
   white-space: nowrap;
 }
@@ -276,7 +276,7 @@ tr.is-offline {
   border: 1px solid var(--line);
   border-radius: 4px;
   color: var(--faint);
-  font-size: 8px;
+  font-size: 12px;
   white-space: nowrap;
 }
 
@@ -289,13 +289,13 @@ tr.is-offline {
 
 .metric-value {
   color: var(--text-soft);
-  font-size: 10.5px;
+  font-size: 12px;
   white-space: nowrap;
 }
 
 .metric-detail {
   color: var(--faint);
-  font-size: 8.5px;
+  font-size: 12px;
   white-space: nowrap;
 }
 
@@ -319,7 +319,7 @@ tr.is-offline {
   display: flex;
   flex-direction: column;
   gap: 2px;
-  font-size: 9px;
+  font-size: 12px;
   white-space: nowrap;
 }
 
@@ -339,7 +339,7 @@ tr.is-offline {
 }
 
 .expire-cell {
-  font-size: 9.5px;
+  font-size: 12.5px;
   white-space: nowrap;
 }
 

@@ -207,7 +207,7 @@ onBeforeUnmount(() => {
 
 .menu-head h3 {
   margin: 3px 0 0;
-  font-size: 16px;
+  font-size: 17px;
   letter-spacing: -0.01em;
 }
 
@@ -233,7 +233,7 @@ onBeforeUnmount(() => {
 .menu-label {
   display: block;
   color: var(--muted);
-  font-size: 11px;
+  font-size: 12px;
   font-weight: 600;
   letter-spacing: 0.04em;
 }
@@ -255,7 +255,7 @@ onBeforeUnmount(() => {
   padding: 0 8px;
   border-radius: 7px;
   color: var(--muted);
-  font-size: 11.5px;
+  font-size: 12.5px;
   font-weight: 560;
   white-space: nowrap;
   transition: background 0.18s ease, color 0.18s ease;
@@ -278,7 +278,7 @@ onBeforeUnmount(() => {
 
 .segmented.compact button {
   height: 26px;
-  font-size: 10.5px;
+  font-size: 12px;
 }
 
 .accent-grid {
@@ -297,7 +297,7 @@ onBeforeUnmount(() => {
   border: 1px solid var(--line);
   border-radius: 9px;
   color: var(--muted);
-  font-size: 11.5px;
+  font-size: 12.5px;
   text-align: left;
   transition: border-color 0.18s ease, color 0.18s ease, background 0.18s ease;
 }
@@ -333,7 +333,7 @@ onBeforeUnmount(() => {
   display: block;
   margin-top: 1px;
   color: var(--faint);
-  font-size: 10px;
+  font-size: 12.5px;
 }
 
 .switch {
@@ -376,7 +376,7 @@ onBeforeUnmount(() => {
   padding-top: 12px;
   border-top: 1px solid var(--line);
   color: var(--faint);
-  font-size: 10.5px;
+  font-size: 12px;
   line-height: 1.5;
 }
 

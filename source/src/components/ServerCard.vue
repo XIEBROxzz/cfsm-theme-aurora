@@ -310,7 +310,7 @@ function pctText(value, fallback = '—') {
   overflow: hidden;
   margin: 0;
   color: var(--text);
-  font-size: 16px;
+  font-size: 17px;
   font-weight: 500;
   line-height: 1.4;
   text-overflow: ellipsis;
@@ -326,7 +326,7 @@ function pctText(value, fallback = '—') {
   border: 1px solid var(--line);
   border-radius: 999px;
   color: var(--muted);
-  font-size: 11px;
+  font-size: 12px;
   line-height: 1.3;
   white-space: nowrap;
 }
@@ -338,7 +338,7 @@ function pctText(value, fallback = '—') {
   border-radius: 4px;
   background: var(--bad);
   color: #ffffff;
-  font-size: 10px;
+  font-size: 12.5px;
   font-weight: 700;
   line-height: 1.3;
   white-space: nowrap;
@@ -348,7 +348,7 @@ function pctText(value, fallback = '—') {
   overflow: hidden;
   margin: 4px 0 0;
   color: var(--muted);
-  font-size: 12px;
+  font-size: 13px;
   line-height: 1.4;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -370,7 +370,7 @@ function pctText(value, fallback = '—') {
   border: 1px solid var(--line);
   border-radius: 999px;
   color: var(--muted);
-  font-size: 11px;
+  font-size: 12px;
   line-height: 1.3;
   white-space: nowrap;
 }
@@ -397,7 +397,7 @@ function pctText(value, fallback = '—') {
 
 .expire {
   color: var(--muted);
-  font-size: 12px;
+  font-size: 13px;
   font-variant-numeric: tabular-nums;
   white-space: nowrap;
 }
@@ -423,14 +423,14 @@ function pctText(value, fallback = '—') {
 .meter-label {
   overflow: hidden;
   color: var(--muted);
-  font-size: 12px;
+  font-size: 13px;
   text-overflow: ellipsis;
   white-space: nowrap;
 }
 
 .meter-pct {
   color: var(--text);
-  font-size: 12px;
+  font-size: 13px;
   font-weight: 500;
   font-variant-numeric: tabular-nums;
   white-space: nowrap;
@@ -461,7 +461,7 @@ function pctText(value, fallback = '—') {
   overflow: hidden;
   margin-top: 6px;
   color: var(--muted);
-  font-size: 12px;
+  font-size: 13px;
   font-variant-numeric: tabular-nums;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -476,7 +476,7 @@ function pctText(value, fallback = '—') {
   margin-top: 12px;
   padding-top: 10px;
   border-top: 1px solid var(--line);
-  font-size: 12px;
+  font-size: 13px;
 }
 
 .net-item {
@@ -509,7 +509,7 @@ function pctText(value, fallback = '—') {
   gap: 6px;
   margin-top: 10px;
   color: var(--muted);
-  font-size: 10.5px;
+  font-size: 12px;
 }
 
 .ping-icon {
