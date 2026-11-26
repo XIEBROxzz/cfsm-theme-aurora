@@ -1,0 +1,23 @@
+{
+  "name": "cfsm-theme-aurora",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Aurora theme for CF-Server-Monitor",
+  "scripts": {
+    "dev": "vite",
+    "demo": "node scripts/demo.mjs",
+    "build": "vite build",
+    "build:theme": "node scripts/build-theme.mjs",
+    "test": "node --test test/client.test.mjs test/monthly.test.mjs test/format.test.mjs test/http.test.mjs",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "vue": "^3.5.13",
+    "vue-router": "^4.5.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^6.0.0",
+    "vite": "^6.0.0"
+  }
+}
