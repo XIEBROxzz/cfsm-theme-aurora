@@ -196,7 +196,9 @@ function pctText(value, fallback = '—') {
           <span class="meter-pct">{{ pctText(cpuPct) }}</span>
         </div>
         <div class="meter-track"><i :style="{ width: `${cpuPct ?? 0}%` }"></i></div>
-        <div class="meter-foot">{{ loadText }}</div>
+        <div class="meter-foot load-foot" :title="locale === 'en' ? '1 / 5 / 15 min load average' : '1 / 5 / 15 分钟平均负载'">
+          {{ t('load') }} {{ loadText }}
+        </div>
       </div>
 
       <div class="meter">
@@ -445,6 +447,10 @@ function pctText(value, fallback = '—') {
   border-radius: inherit;
   background: linear-gradient(90deg, var(--accent), color-mix(in srgb, var(--accent) 55%, var(--accent-2)));
   transition: width 0.5s ease;
+}
+
+.load-foot {
+  font-weight: 500;
 }
 
 .meter-foot {
