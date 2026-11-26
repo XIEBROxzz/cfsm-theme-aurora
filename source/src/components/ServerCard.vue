@@ -138,7 +138,7 @@ const pings = computed(() => {
     cu: sys.value.custom_cu_name || t('unicom'),
     cm: sys.value.custom_cm_name || t('mobile')
   }
-  return ['ct', 'cm', 'cu'].map((key) => {
+  return ['ct', 'cu', 'cm'].map((key) => {
     const route = routes.find((item) => item.key === key)
     const state = online.value ? route?.state || 'off' : 'off'
     const value = Number(route?.value)
