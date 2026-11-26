@@ -162,7 +162,7 @@ const spark = computed(() => {
   right: 0;
   left: 0;
   height: 2px;
-  background: linear-gradient(90deg, #059669, #7c3aed 48%, #e11d48);
+  background: linear-gradient(90deg, #7c3aed, #e11d48 48%, #059669);
   content: '';
   opacity: 0.75;
 }

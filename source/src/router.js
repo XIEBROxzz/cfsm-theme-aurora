@@ -15,12 +15,6 @@ const routes = [
     meta: { mode: 'detail' }
   },
   {
-    path: '/epaper',
-    name: 'epaper',
-    component: () => import('./views/Epaper.vue'),
-    meta: { mode: 'epaper' }
-  },
-  {
     path: '/:pathMatch(.*)*',
     redirect: '/'
   }

@@ -1,8 +1,8 @@
 # Aurora · CF-Server-Monitor 主题
 
-为 [CF-Server-Monitor](https://github.com/huilang-me/CF-Server-Monitor) 制作的极光风格第三方前台。保留浅色 / 深色、外观菜单、卡片 / 列表视图、节点历史详情和墨水屏视图。
+为 [CF-Server-Monitor](https://github.com/huilang-me/CF-Server-Monitor) 制作的极光风格第三方前台。保留浅色 / 深色、外观菜单、卡片 / 列表视图和节点历史详情。三网曲线固定为电信紫 / 联通红 / 移动绿，资源曲线为 CPU 紫 / 内存红 / 磁盘绿。
 
-> **验证状态：本地修复已完成。** 每个主题的 96 项自动化测试通过，Vite 发布构建成功，根目录入口和哈希资源已同步；并已使用本地模拟数据完成桌面 / 手机及正常 / 异常交互检查。未进行真实 Cloudflare 站点端到端验收；安装后请先使用管理员预览确认。详细记录见 [docs/VALIDATION.md](docs/VALIDATION.md)。
+> **验证状态：本地修复已完成。** 每个主题的 97 项自动化测试通过，Vite 发布构建成功，根目录入口和哈希资源已同步；并已使用本地模拟数据完成桌面 / 手机及正常 / 异常交互检查。未进行真实 Cloudflare 站点端到端验收；安装后请先使用管理员预览确认。详细记录见 [docs/VALIDATION.md](docs/VALIDATION.md)。
 
 这不是监控后端，也不替换管理后台。正式使用需要已部署的 CF-Server-Monitor 和正常上报的探针。
 
@@ -12,15 +12,13 @@
 
 ![Aurora 浅色卡片总览](docs/screenshots/desktop-light.png)
 
-<details><summary>深色、列表、详情与墨水屏</summary>
+<details><summary>深色、列表与详情</summary>
 
 ![深色总览](docs/screenshots/desktop-dark.png)
 
 ![列表视图](docs/screenshots/list.png)
 
 ![节点详情与历史图](docs/screenshots/detail.png)
-
-![墨水屏页面](docs/screenshots/epaper.png)
 
 </details>
 
@@ -64,7 +62,6 @@ Worker 会在监控站点同域反代主题静态资源；`/api/*`、`/flags/*`�
 | --- | --- |
 | `/#/` | 节点概况、实时速率、UTC 月流量、卡片和列表 |
 | `/#/server/:id` | 单台节点指标、历史查询和网络质量 |
-| `/#/epaper` | 墨水屏 / 打印友好的页面；浏览器是否允许打印取决于运行环境 |
 | 外观菜单 | 明暗、主题色、密度、迷你走势、语言等本机偏好 |
 | `/admin#/admin` | 原项目默认后台，不由 Aurora 实现 |
 
@@ -172,7 +169,7 @@ README.md
 - 当前 README 截图已用本次构建产物重新生成，数据为本地模拟样本。
 - 主题不提供管理页、测速、自动路由识别或历史流量回补。
 - 配置变更后应刷新页面；浏览器缓存的旧哈希资源可能暂时保持旧界面。
-- 上线前需检查：首页、卡片 / 列表、直达详情、历史区间、墨水屏、手机溢出、后台入口、验证失败恢复、UTC 月界和时限暂停。
+- 上线前需检查：首页、卡片 / 列表、直达详情、历史区间、手机溢出、后台入口、验证失败恢复、UTC 月界和时限暂停。
 - 不声称某个旧 Beta 版本已验证，也不把默认初始密码说明成永远有效的后台密码。
 
 保留 `Powered by CF-Server-Monitor` 署名。上游代码许可见 [UPSTREAM-LICENSE.txt](UPSTREAM-LICENSE.txt)，Iceglass 共享客户端许可见 [ICEGLASS-LICENSE.txt](ICEGLASS-LICENSE.txt)。

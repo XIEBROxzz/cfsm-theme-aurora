@@ -20,11 +20,6 @@ const adminLabel = computed(() => (authed.value ? t('adminPanel') : t('login')))
       <RouterLink to="/" class="brand" :title="title">{{ title }}</RouterLink>
 
       <nav class="header-nav" aria-label="Primary">
-        <RouterLink to="/epaper" class="header-link">
-          <AppIcon name="printer" :size="16" />
-          <span class="link-label">{{ t('epaper') }}</span>
-        </RouterLink>
-
         <a class="header-link" :href="adminHref">
           <AppIcon name="admin" :size="16" />
           <span class="link-label">{{ adminLabel }}</span>

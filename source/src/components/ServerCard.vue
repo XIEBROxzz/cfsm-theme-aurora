@@ -67,6 +67,8 @@ function compactDuration(seconds) {
   return `${minutes} 分`
 }
 
+// Only loss rates and probe results are available. A timeout is reported as
+// "TCP unreachable"; GFW blocking cannot be inferred from this data.
 const faultReason = computed(() => {
   if (!online.value) return t('offline')
   const losses = ['loss_ct', 'loss_cu', 'loss_cm']
@@ -74,12 +76,12 @@ const faultReason = computed(() => {
     .filter((value) => Number.isFinite(value))
   const heavyLoss = losses.find((value) => value >= 50)
   if (heavyLoss !== undefined) {
-    return locale.value === 'en' ? `Packet loss ≥ 50% (${heavyLoss.toFixed(0)}%)` : `线路丢包 ≥ 50%（${heavyLoss.toFixed(0)}%）`
+    return locale.value === 'en' ? `High loss (${heavyLoss.toFixed(0)}%)` : `丢包过高（${heavyLoss.toFixed(0)}%）`
   }
   const configured = latencyRoutes(props.server)
     .filter((route) => route.key !== 'bd' && route.state !== 'off')
   if (configured.length > 0 && configured.every((route) => route.state === 'timeout')) {
-    return locale.value === 'en' ? 'All carrier probes timed out' : '三网探测全部超时'
+    return locale.value === 'en' ? 'TCP unreachable (probe timeout)' : 'TCP不通（探测超时）'
   }
   return ''
 })
@@ -247,7 +249,7 @@ function pctText(value, fallback = '—') {
     <div v-if="showPings" class="ping-row">
       <AppIcon name="bolt" :size="12" class="ping-icon" />
       <div class="ping-list">
-        <span v-for="item in pings" :key="item.key" class="ping-item tnum">
+        <span v-for="item in pings" :key="item.key" class="ping-item tnum" :title="`${item.name} ${item.text}`">
           <i class="ping-dot" :style="{ background: item.color }"></i><span :style="{ color: item.color }">{{ item.name }}</span>
           <b :class="{ 'is-empty': item.state !== 'ok' }">{{ item.text }}</b>
         </span>
@@ -492,11 +494,12 @@ function pctText(value, fallback = '—') {
 
 .ping-row {
   display: flex;
-  align-items: center;
-  gap: 12px;
+  min-width: 0;
+  align-items: flex-start;
+  gap: 6px;
   margin-top: 10px;
   color: var(--muted);
-  font-size: 12px;
+  font-size: 10.5px;
 }
 
 .ping-icon {
@@ -507,15 +510,17 @@ function pctText(value, fallback = '—') {
 .ping-list {
   display: flex;
   flex: 1;
+  min-width: 0;
+  flex-wrap: wrap;
   align-items: center;
-  justify-content: space-between;
-  gap: 8px;
+  gap: 2px 8px;
 }
 
 .ping-item {
   display: inline-flex;
+  min-width: 0;
   align-items: center;
-  gap: 3px;
+  gap: 2px;
   white-space: nowrap;
 }
 
