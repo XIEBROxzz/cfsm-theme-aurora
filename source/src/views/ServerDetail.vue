@@ -24,6 +24,7 @@ import {
   formatNumber,
   formatSpeed,
   isServerOnline,
+  latencyColor,
   latencyRoutes,
   latencyState,
   utcMonthlyTraffic, trafficUsage, serverUptimeSeconds, validNumber, formatPercent,
@@ -638,13 +639,13 @@ onBeforeUnmount(() => {
                   :class="`tone-${route.tone}`"
                 >
                   <div class="route-head">
-                    <i :style="{ background: routeColor(route.key) }"></i>
+                    <i :style="{ background: latencyColor(route.value, monitor.theme) }"></i>
                     <span>{{ route.label }}</span>
                   </div>
-                  <strong v-if="route.state === 'ok'" class="mono">
+                  <strong v-if="route.state === 'ok'" class="mono" :style="{ color: latencyColor(route.value, monitor.theme) }">
                     {{ Math.round(Number(route.value)) }}<small>ms</small>
                   </strong>
-                  <strong v-else-if="route.state === 'timeout'" class="route-timeout">{{ t('timeout') }}</strong>
+                  <strong v-else-if="route.state === 'timeout'" class="route-timeout" :style="{ color: latencyColor(route.value, monitor.theme) }">{{ t('timeout') }}</strong>
                   <strong v-else class="route-off">—</strong>
                   <small v-if="route.state === 'ok' && lossText(route)" class="route-loss">
                     {{ t('packetLoss') }} {{ lossText(route) }}
@@ -1303,7 +1304,7 @@ onBeforeUnmount(() => {
   display: flex;
   align-items: center;
   gap: 5px;
-  color: var(--faint);
+  color: var(--text);
   font-family: var(--font-mono);
   font-size: 10px;
   font-weight: 650;
@@ -1328,12 +1329,6 @@ onBeforeUnmount(() => {
   color: var(--faint);
   font-size: 10.5px;
   font-weight: 500;
-}
-
-.route-box.tone-good > strong,
-.route-box.tone-warn > strong,
-.route-box.tone-bad > strong {
-  color: var(--text);
 }
 
 .route-timeout {

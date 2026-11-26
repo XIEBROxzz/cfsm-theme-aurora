@@ -404,13 +404,31 @@ export function latencyState(value) {
   return validNumber(value) && Number(value) >= 0 ? 'ok' : 'off'
 }
 
+// Latency is graded by reachability and RTT, independent of carrier identity:
+// <=250ms green, 250-400ms blue, >=400ms orange, timeout red, missing gray.
+export const LATENCY_COLORS = Object.freeze({
+  light: Object.freeze({ good: '#059669', mid: '#2563eb', slow: '#ea580c', timeout: '#e11d48', off: '#8f8f8f' }),
+  dark: Object.freeze({ good: '#34d399', mid: '#60a5fa', slow: '#fb923c', timeout: '#fb7185', off: '#8a8a8a' })
+})
+
+export function latencyColor(value, theme = 'light') {
+  const palette = theme === 'dark' ? LATENCY_COLORS.dark : LATENCY_COLORS.light
+  const state = latencyState(value)
+  if (state === 'timeout') return palette.timeout
+  if (state === 'off') return palette.off
+  const number = Number(value)
+  if (number <= 250) return palette.good
+  if (number < 400) return palette.mid
+  return palette.slow
+}
+
 export function latencyTone(value) {
   const state = latencyState(value)
   if (state === 'timeout') return 'bad'
   if (state === 'off') return 'off'
   const number = Number(value)
-  if (number < 80) return 'good'
-  if (number < 160) return 'warn'
+  if (number <= 250) return 'good'
+  if (number < 400) return 'warn'
   return 'bad'
 }
 

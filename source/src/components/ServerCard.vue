@@ -4,11 +4,11 @@ import { RouterLink } from 'vue-router'
 import { monitor } from '../stores/monitor'
 import { locale, t } from '../utils/i18n'
 import {
-  carrierColor,
   expireInfo,
   formatBytes,
   formatSpeed,
   isServerOnline,
+  latencyColor,
   latencyRoutes,
   utcMonthlyTraffic, trafficUsage, validNumber,
   pairBytes,
@@ -140,14 +140,17 @@ const pings = computed(() => {
   }
   return ['ct', 'cm', 'cu'].map((key) => {
     const route = routes.find((item) => item.key === key)
-    const state = route?.state || 'off'
+    const state = online.value ? route?.state || 'off' : 'off'
     const value = Number(route?.value)
+    const text = !online.value ? '—'
+      : state === 'timeout' ? t('timeout')
+        : state === 'ok' && Number.isFinite(value) ? `${value}ms` : '—'
     return {
       key,
       name: names[key],
       state,
-      color: carrierColor(key, monitor.theme),
-      text: !online.value ? '—' : state === 'timeout' ? t('timeout') : state === 'ok' && Number.isFinite(value) ? `${value}ms` : '—'
+      text,
+      color: latencyColor(online.value ? route?.value : undefined, monitor.theme)
     }
   })
 })
@@ -252,8 +255,9 @@ function pctText(value, fallback = '—') {
       <AppIcon name="bolt" :size="12" class="ping-icon" />
       <div class="ping-list">
         <span v-for="item in pings" :key="item.key" class="ping-item tnum" :title="`${item.name} ${item.text}`">
-          <i class="ping-dot" :style="{ background: item.color }"></i><span :style="{ color: item.color }">{{ item.name }}</span>
-          <b :class="{ 'is-empty': item.state !== 'ok' }">{{ item.text }}</b>
+          <i class="ping-dot" :style="{ background: item.color }"></i>
+          <span class="ping-name">{{ item.name }}</span>
+          <b :style="{ color: item.color }">{{ item.text }}</b>
         </span>
       </div>
     </div>
@@ -535,15 +539,13 @@ function pctText(value, fallback = '—') {
   height: 5px;
   flex: 0 0 auto;
   border-radius: 50%;
-  box-shadow: 0 0 5px currentColor;
+}
+
+.ping-name {
+  color: var(--text);
 }
 
 .ping-item b {
-  font-weight: 500;
-}
-
-.ping-item .is-empty {
-  color: var(--bad);
   font-weight: 600;
 }
 
