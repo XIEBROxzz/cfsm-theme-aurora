@@ -64,7 +64,7 @@ function close() {
 
 .ws-card h2 {
   margin: 8px 0 8px;
-  font-size: 20px;
+  font-size: 19px;
   letter-spacing: -0.02em;
 }
 
@@ -72,7 +72,7 @@ function close() {
   margin: 0 auto;
   max-width: 330px;
   color: var(--muted);
-  font-size: 13.5px;
+  font-size: 12.5px;
   line-height: 1.65;
 }
 

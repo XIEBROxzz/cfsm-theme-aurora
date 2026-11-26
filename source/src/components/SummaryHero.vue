@@ -174,7 +174,7 @@ const spark = computed(() => {
   justify-content: space-between;
   gap: 6px;
   color: var(--muted);
-  font-size: 13px;
+  font-size: 12px;
 }
 
 .tile-label {
@@ -199,7 +199,7 @@ const spark = computed(() => {
   border-radius: 999px;
   background: var(--bg-soft);
   color: var(--muted);
-  font-size: 12.5px;
+  font-size: 10px;
   line-height: 1.2;
   white-space: nowrap;
 }
@@ -208,7 +208,7 @@ const spark = computed(() => {
   overflow: hidden;
   margin-top: 4px;
   color: var(--text);
-  font-size: 21px;
+  font-size: 20px;
   font-weight: 600;
   letter-spacing: -0.02em;
   line-height: 1.4;
@@ -219,7 +219,7 @@ const spark = computed(() => {
 .tile-divider {
   margin: 0 5px;
   color: var(--faint);
-  font-size: 18px;
+  font-size: 17px;
   font-weight: 400;
 }
 
@@ -228,7 +228,7 @@ const spark = computed(() => {
   padding-top: 4px;
   overflow: hidden;
   color: var(--muted);
-  font-size: 13px;
+  font-size: 12px;
   line-height: 1.4;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -282,7 +282,7 @@ const spark = computed(() => {
   }
 
   .tile-value {
-    font-size: 21px;
+    font-size: 20px;
   }
 }
 </style>

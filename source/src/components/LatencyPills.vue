@@ -53,7 +53,7 @@ function lossText(route) {
 
 .latency-chip {
   display: inline-flex;
-  height: 28px;
+  height: 25px;
   align-items: center;
   gap: 5px;
   padding: 0 8px;
@@ -62,13 +62,13 @@ function lossText(route) {
   background: rgba(148, 163, 184, 0.045);
   color: var(--text-soft);
   font-family: var(--font-mono);
-  font-size: 12px;
+  font-size: 11px;
   font-weight: 550;
   white-space: nowrap;
 }
 
 .latency-chip.compact {
-  height: 26px;
+  height: 23px;
 }
 
 .route-dot {
@@ -80,19 +80,19 @@ function lossText(route) {
 
 .route-label {
   color: var(--text);
-  font-size: 12.5px;
+  font-size: 10px;
   font-weight: 700;
   letter-spacing: 0.04em;
 }
 
 .latency-chip strong {
-  font-size: 12px;
+  font-size: 11px;
   font-weight: 600;
 }
 
 .latency-chip small {
   color: var(--faint);
-  font-size: 12.5px;
+  font-size: 10px;
 }
 
 .latency-chip.timeout {

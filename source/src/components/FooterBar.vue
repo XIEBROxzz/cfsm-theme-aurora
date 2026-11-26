@@ -46,7 +46,7 @@ import AppIcon from './AppIcon.vue'
   justify-content: space-between;
   gap: 20px;
   color: var(--faint);
-  font-size: 12px;
+  font-size: 11px;
 }
 
 .footer-brand,
@@ -81,7 +81,7 @@ import AppIcon from './AppIcon.vue'
   padding: 1px 6px;
   border: 1px solid var(--line);
   border-radius: 5px;
-  font-size: 12px;
+  font-size: 9px;
 }
 
 .footer-item {

@@ -57,7 +57,7 @@ import AppIcon from './components/AppIcon.vue'
   background: var(--surface-strong);
   box-shadow: var(--shadow);
   color: var(--text-soft);
-  font-size: 13px;
+  font-size: 12px;
   transform: translateX(-50%);
   backdrop-filter: blur(16px);
 }
@@ -98,12 +98,12 @@ import AppIcon from './components/AppIcon.vue'
 
 .auth-card h2 {
   margin: 0 0 6px;
-  font-size: 18px;
+  font-size: 17px;
 }
 
 .auth-card p {
   margin: 0;
   color: var(--muted);
-  font-size: 13px;
+  font-size: 12px;
 }
 </style>
