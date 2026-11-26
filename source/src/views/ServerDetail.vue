@@ -723,7 +723,7 @@ onBeforeUnmount(() => {
   align-items: center;
   gap: 6px;
   color: var(--muted);
-  font-size: 10.5px;
+  font-size: 12px;
   font-weight: 560;
   transition: color 0.16s ease;
 }
@@ -748,7 +748,7 @@ onBeforeUnmount(() => {
   border-radius: 99px;
   color: var(--muted);
   font-family: var(--font-mono);
-  font-size: 8.5px;
+  font-size: 10.5px;
   font-weight: 600;
   letter-spacing: 0.06em;
   text-transform: uppercase;
@@ -850,7 +850,7 @@ onBeforeUnmount(() => {
   border: 1px solid var(--line);
   border-radius: 5px;
   color: var(--muted);
-  font-size: 9px;
+  font-size: 11px;
   font-weight: 560;
 }
 
@@ -878,7 +878,7 @@ onBeforeUnmount(() => {
   align-items: center;
   gap: 5px;
   color: var(--muted);
-  font-size: 9.5px;
+  font-size: 11px;
 }
 
 .os-chip img {
@@ -889,7 +889,7 @@ onBeforeUnmount(() => {
 
 .meta-text {
   color: var(--faint);
-  font-size: 9.5px;
+  font-size: 11px;
 }
 
 .tag-row {
@@ -905,7 +905,7 @@ onBeforeUnmount(() => {
   border-radius: 4px;
   color: var(--faint);
   font-family: var(--font-mono);
-  font-size: 8px;
+  font-size: 10px;
 }
 
 .hero-side {
@@ -926,14 +926,14 @@ onBeforeUnmount(() => {
 .hero-report span {
   color: var(--faint);
   font-family: var(--font-mono);
-  font-size: 8px;
+  font-size: 10px;
   letter-spacing: 0.08em;
   text-transform: uppercase;
 }
 
 .hero-report strong {
   color: var(--muted);
-  font-size: 9px;
+  font-size: 11px;
   font-weight: 500;
   white-space: nowrap;
 }
@@ -978,7 +978,7 @@ onBeforeUnmount(() => {
 .traffic-head span {
   color: var(--faint);
   font-family: var(--font-mono);
-  font-size: 8.5px;
+  font-size: 10.5px;
   font-weight: 650;
   letter-spacing: 0.09em;
   text-transform: uppercase;
@@ -1017,7 +1017,7 @@ onBeforeUnmount(() => {
   align-items: center;
   justify-content: space-between;
   color: var(--faint);
-  font-size: 8.5px;
+  font-size: 10.5px;
 }
 
 .traffic-foot b {
@@ -1030,7 +1030,7 @@ onBeforeUnmount(() => {
   gap: 12px;
   color: var(--muted);
   font-family: var(--font-mono);
-  font-size: 8.5px;
+  font-size: 10.5px;
 }
 
 .traffic-split span {
@@ -1090,7 +1090,7 @@ onBeforeUnmount(() => {
   padding: 0 9px;
   border-radius: 5px;
   color: var(--muted);
-  font-size: 9.5px;
+  font-size: 11px;
   font-weight: 560;
   white-space: nowrap;
 }
@@ -1122,7 +1122,7 @@ onBeforeUnmount(() => {
   gap: 7px;
   margin: 0;
   color: var(--text-soft);
-  font-size: 11.5px;
+  font-size: 12.5px;
   font-weight: 600;
 }
 
@@ -1132,7 +1132,7 @@ onBeforeUnmount(() => {
 
 .chart-count {
   color: var(--faint);
-  font-size: 8px;
+  font-size: 10px;
 }
 
 .chart-loading {
@@ -1141,7 +1141,7 @@ onBeforeUnmount(() => {
   gap: 5px;
   color: var(--faint);
   font-family: var(--font-mono);
-  font-size: 8px;
+  font-size: 10px;
 }
 
 .chart-loading i {
@@ -1176,7 +1176,7 @@ onBeforeUnmount(() => {
 .side-head h2 {
   margin: 0;
   color: var(--text-soft);
-  font-size: 11px;
+  font-size: 12.5px;
   font-weight: 600;
   letter-spacing: 0.01em;
 }
@@ -1186,7 +1186,7 @@ onBeforeUnmount(() => {
   border: 1px solid var(--line);
   border-radius: 4px;
   color: var(--faint);
-  font-size: 8px;
+  font-size: 10px;
   white-space: nowrap;
 }
 
@@ -1214,7 +1214,7 @@ onBeforeUnmount(() => {
 .info-row dt {
   flex: 0 0 auto;
   color: var(--faint);
-  font-size: 9px;
+  font-size: 11px;
 }
 
 .info-row dd {
@@ -1223,7 +1223,7 @@ onBeforeUnmount(() => {
   margin: 0;
   color: var(--text-soft);
   font-family: var(--font-mono);
-  font-size: 9px;
+  font-size: 11px;
   text-align: right;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -1252,7 +1252,7 @@ onBeforeUnmount(() => {
 
 .traffic-large span {
   color: var(--faint);
-  font-size: 9px;
+  font-size: 11px;
 }
 
 .traffic-detail-grid {
@@ -1273,12 +1273,12 @@ onBeforeUnmount(() => {
 
 .traffic-detail-grid span {
   color: var(--faint);
-  font-size: 8px;
+  font-size: 10px;
 }
 
 .traffic-detail-grid b {
   color: var(--text-soft);
-  font-size: 9.5px;
+  font-size: 11px;
   font-weight: 600;
 }
 
@@ -1305,7 +1305,7 @@ onBeforeUnmount(() => {
   gap: 5px;
   color: var(--faint);
   font-family: var(--font-mono);
-  font-size: 8px;
+  font-size: 10px;
   font-weight: 650;
   letter-spacing: 0.05em;
 }
@@ -1326,7 +1326,7 @@ onBeforeUnmount(() => {
 .route-box > strong small {
   margin-left: 1px;
   color: var(--faint);
-  font-size: 7px;
+  font-size: 10.5px;
   font-weight: 500;
 }
 
@@ -1347,7 +1347,7 @@ onBeforeUnmount(() => {
 .route-loss {
   color: var(--faint);
   font-family: var(--font-mono);
-  font-size: 7.5px;
+  font-size: 11px;
 }
 
 .stat-grid {
@@ -1370,12 +1370,12 @@ onBeforeUnmount(() => {
 
 .stat-grid span {
   color: var(--faint);
-  font-size: 8px;
+  font-size: 10px;
 }
 
 .stat-grid b {
   color: var(--text-soft);
-  font-size: 11.5px;
+  font-size: 12.5px;
   font-weight: 600;
 }
 
@@ -1395,7 +1395,7 @@ onBeforeUnmount(() => {
 
 .price-row span {
   color: var(--faint);
-  font-size: 9px;
+  font-size: 11px;
 }
 
 .inline-banner {
@@ -1408,7 +1408,7 @@ onBeforeUnmount(() => {
   border-radius: 9px;
   background: rgba(var(--warn-rgb), 0.05);
   color: var(--warn);
-  font-size: 10.5px;
+  font-size: 12px;
 }
 
 .inline-banner.compact {
@@ -1422,7 +1422,7 @@ onBeforeUnmount(() => {
 
 .inline-banner button {
   color: var(--text-soft);
-  font-size: 9.5px;
+  font-size: 11px;
   text-decoration: underline;
   text-underline-offset: 2px;
 }
@@ -1512,7 +1512,7 @@ onBeforeUnmount(() => {
   max-width: 380px;
   margin: 0 0 18px;
   color: var(--muted);
-  font-size: 12px;
+  font-size: 13px;
   line-height: 1.6;
 }
 

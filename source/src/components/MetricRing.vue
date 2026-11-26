@@ -105,7 +105,7 @@ html[data-density="comfortable"] .ring-value {
 .ring-value em {
   margin-left: 1px;
   color: var(--faint);
-  font-size: 7px;
+  font-size: 11.5px;
   font-style: normal;
   font-weight: 500;
 }
@@ -113,7 +113,7 @@ html[data-density="comfortable"] .ring-value {
 .ring-label {
   color: var(--faint);
   font-family: var(--font-mono);
-  font-size: 8px;
+  font-size: 11.5px;
   font-weight: 650;
   letter-spacing: 0.1em;
 }
@@ -123,7 +123,7 @@ html[data-density="comfortable"] .ring-value {
   max-width: 78px;
   color: var(--muted);
   font-family: var(--font-mono);
-  font-size: 8.5px;
+  font-size: 11px;
   text-overflow: ellipsis;
   white-space: nowrap;
 }
