@@ -4,11 +4,11 @@ export { utcMonthlyTraffic, aggregateMonthlyTraffic, utcMonth, validNumber }
 
 const BYTE_UNITS = ['B', 'KB', 'MB', 'GB', 'TB', 'PB']
 
-// One carrier palette for the whole UI: CT purple, CU red, CM green, BGP amber.
+// One carrier palette for the whole UI: CT red, CU purple, CM green, BGP amber.
 // Light/dark variants keep the lines readable.
 export const CARRIER_COLORS = Object.freeze({
-  light: Object.freeze({ ct: '#7c3aed', cu: '#e11d48', cm: '#059669', bd: '#d97706' }),
-  dark: Object.freeze({ ct: '#a78bfa', cu: '#fb7185', cm: '#34d399', bd: '#fbbf24' })
+  light: Object.freeze({ ct: '#e11d48', cu: '#7c3aed', cm: '#059669', bd: '#d97706' }),
+  dark: Object.freeze({ ct: '#fb7185', cu: '#a78bfa', cm: '#34d399', bd: '#fbbf24' })
 })
 
 export function carrierColor(key, theme = 'light') {

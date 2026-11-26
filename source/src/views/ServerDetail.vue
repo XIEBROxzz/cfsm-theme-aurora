@@ -74,13 +74,13 @@ const serverId = computed(() => String(route.params.id || ''))
 const sys = computed(() => monitor.sysConfig)
 
 const CHART_COLORS = Object.freeze({
-  light: Object.freeze({ cpu: '#7c3aed', memory: '#e11d48', disk: '#059669', download: '#e11d48', upload: '#059669' }),
-  dark: Object.freeze({ cpu: '#a78bfa', memory: '#fb7185', disk: '#34d399', download: '#fb7185', upload: '#34d399' })
+  light: Object.freeze({ cpu: '#e11d48', memory: '#7c3aed', disk: '#059669', download: '#e11d48', upload: '#059669' }),
+  dark: Object.freeze({ cpu: '#fb7185', memory: '#a78bfa', disk: '#34d399', download: '#fb7185', upload: '#34d399' })
 })
 
 const chartPalette = computed(() => CHART_COLORS[monitor.theme === 'dark' ? 'dark' : 'light'])
 
-// Carriers keep their fixed purple / red / green identity in every chart.
+// Carriers keep their fixed red / purple / green identity in every chart.
 function routeColor(key) {
   return carrierColor(key, monitor.theme)
 }

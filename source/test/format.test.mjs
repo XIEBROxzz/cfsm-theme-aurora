@@ -12,13 +12,13 @@ test('non-calendar-month counters are unavailable, not fabricated zero',()=>{ass
 test('timestamp supports ISO and seconds, unknown date not current time',()=>{assert.equal(normalizeTimestamp(new Date(now).toISOString()),now);assert.equal(normalizeTimestamp(now/1000),now);assert.equal(formatDateTime(null),'—');assert.equal(serverUptimeSeconds({boot_time:String(now-3600000)},now),3600)})
 test('region asset paths are validated and preserve supplied region codes',()=>{assert.equal(regionCode('../x'),'');assert.equal(regionCode('TW'),'TW');assert.equal(regionCode('us'),'US')})
 
-test('carrier palette is fixed purple / red / green with dark variants', async()=>{
+test('carrier palette is fixed red / purple / green with dark variants', async()=>{
  const {carrierColor,CARRIER_COLORS}=await import('../src/utils/format.js')
- assert.equal(carrierColor('ct'),'#7c3aed')
- assert.equal(carrierColor('cu'),'#e11d48')
+ assert.equal(carrierColor('ct'),'#e11d48')
+ assert.equal(carrierColor('cu'),'#7c3aed')
  assert.equal(carrierColor('cm'),'#059669')
- assert.equal(carrierColor('ct','dark'),'#a78bfa')
- assert.equal(carrierColor('cu','dark'),'#fb7185')
+ assert.equal(carrierColor('ct','dark'),'#fb7185')
+ assert.equal(carrierColor('cu','dark'),'#a78bfa')
  assert.equal(carrierColor('cm','dark'),'#34d399')
  assert.equal(carrierColor('unknown'),CARRIER_COLORS.light.bd)
 })

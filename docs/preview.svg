@@ -73,7 +73,7 @@
 
     <text x="74" y="272" font-size="104" font-weight="700" letter-spacing="-2" fill="url(#titleGrad)">Aurora</text>
 
-    <text x="80" y="326" font-size="22" fill="#B9C6DE">紫红绿三网 · 实时监控 · 历史曲线</text>
+    <text x="80" y="326" font-size="22" fill="#B9C6DE">红紫绿三网 · 实时监控 · 历史曲线</text>
 
     <g fill="#8FA3C4" font-size="16">
       <g transform="translate(80,372)">

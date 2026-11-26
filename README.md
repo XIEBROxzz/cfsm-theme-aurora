@@ -1,6 +1,6 @@
 # Aurora · CF-Server-Monitor 主题
 
-为 [CF-Server-Monitor](https://github.com/huilang-me/CF-Server-Monitor) 制作的极光风格第三方前台。保留浅色 / 深色、外观菜单、卡片 / 列表视图和节点历史详情。三网曲线固定为电信紫 / 联通红 / 移动绿，资源曲线为 CPU 紫 / 内存红 / 磁盘绿。
+为 [CF-Server-Monitor](https://github.com/huilang-me/CF-Server-Monitor) 制作的极光风格第三方前台。保留浅色 / 深色、外观菜单、卡片 / 列表视图和节点历史详情。三网曲线固定为电信红 / 联通紫 / 移动绿，资源与速率曲线统一为红 / 紫 / 绿。
 
 > **验证状态：本地修复已完成。** 每个主题的 97 项自动化测试通过，Vite 发布构建成功，根目录入口和哈希资源已同步；并已使用本地模拟数据完成桌面 / 手机及正常 / 异常交互检查。未进行真实 Cloudflare 站点端到端验收；安装后请先使用管理员预览确认。详细记录见 [docs/VALIDATION.md](docs/VALIDATION.md)。
 
